@@ -7,6 +7,7 @@ import { useScavengerHunt } from './hooks/useScavengerHunt';
 import { AlertCircle } from 'lucide-react';
 
 import { LandingPage } from './components/LandingPage';
+import { MusicPlayer } from './components/MusicPlayer';
 import { useState } from 'react';
 
 function App() {
@@ -22,9 +23,16 @@ function App() {
     resetProgress
   } = useScavengerHunt();
 
+  // Determine current music track
+  const currentMusic = hasStarted
+    ? (currentStageData?.music || '/media/tappa1.mp3')
+    : '/media/iniziale.mp3';
+
   if (!hasStarted) {
     return (
       <Layout>
+        <MusicPlayer src={currentMusic} shouldPlay={false} />
+        {/* Note: Autoplay might be blocked until interaction, but we mount it */}
         <LandingPage onStart={() => setHasStarted(true)} />
       </Layout>
     );
@@ -32,6 +40,7 @@ function App() {
 
   return (
     <Layout>
+      <MusicPlayer src={currentMusic} shouldPlay={true} />
       <Header currentStep={currentStep} />
 
       <main className="flex-1 flex flex-col items-center justify-center relative w-full">

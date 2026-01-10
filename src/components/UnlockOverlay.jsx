@@ -78,14 +78,7 @@ export const UnlockOverlay = ({ stage, onClose }) => {
                             >
                                 Tappa Completata!
                             </motion.h2>
-                            <motion.p
-                                initial={{ y: 20, opacity: 0 }}
-                                animate={{ y: 0, opacity: 1 }}
-                                transition={{ delay: 0.5 }}
-                                className="text-slate-800 font-medium text-lg leading-relaxed"
-                            >
-                                {stage.message}
-                            </motion.p>
+
                         </div>
 
                         {/* Media Carousel */}

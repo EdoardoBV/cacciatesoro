@@ -7,7 +7,8 @@ export const stages = [
         media: [
             "https://images.unsplash.com/photo-1542291026-7eec264c27ff?auto=format&fit=crop&q=80&w=800"
         ],
-        message: "Mesi 1-2: L'inizio di tutto!"
+        message: "Mesi 1-2: L'inizio di tutto!",
+        music: "/media/tappa1.mp3"
     },
     {
         id: 2,
@@ -17,7 +18,8 @@ export const stages = [
         media: [
             "https://images.unsplash.com/photo-1555041469-a586c61ea9bc?auto=format&fit=crop&q=80&w=800"
         ],
-        message: "Mesi 3-4: Momenti di relax."
+        message: "Mesi 3-4: Momenti di relax.",
+        music: "/media/tappa2.mp3"
     },
     {
         id: 3,
@@ -27,7 +29,8 @@ export const stages = [
         media: [
             "https://images.unsplash.com/photo-1556036125-582886c348f9?auto=format&fit=crop&q=80&w=800"
         ],
-        message: "Mesi 5-6: Follie segrete."
+        message: "Mesi 5-6: Follie segrete.",
+        music: "/media/tappa3.mp3"
     },
     {
         id: 4,
@@ -37,7 +40,8 @@ export const stages = [
         media: [
             "https://images.unsplash.com/photo-1555939594-58d7cb561ad1?auto=format&fit=crop&q=80&w=800"
         ],
-        message: "Mesi 7-8: Sapori indimenticabili."
+        message: "Mesi 7-8: Sapori indimenticabili.",
+        music: "/media/tappa4.mp3"
     },
     {
         id: 5,
@@ -47,7 +51,8 @@ export const stages = [
         media: [
             "https://images.unsplash.com/photo-1542665095-2c8dd67b0aa2?auto=format&fit=crop&q=80&w=800"
         ],
-        message: "Mesi 9-10: Sogni d'oro."
+        message: "Mesi 9-10: Sogni d'oro.",
+        music: "/media/tappa5.mp3"
     },
     {
         id: 6,
@@ -57,7 +62,8 @@ export const stages = [
         media: [
             "https://images.unsplash.com/photo-1584620836309-8458036125ca?auto=format&fit=crop&q=80&w=800"
         ],
-        message: "Mesi 11-12: Intimità domestica."
+        message: "Mesi 11-12: Intimità domestica.",
+        music: "/media/tappa6.mp3"
     },
     {
         id: 7,
@@ -67,7 +73,8 @@ export const stages = [
         media: [
             "https://images.unsplash.com/photo-1595429035839-c99c298ffdde?auto=format&fit=crop&q=80&w=800"
         ],
-        message: "Mesi 13-14: I nostri legami."
+        message: "Mesi 13-14: I nostri legami.",
+        music: "/media/tappa7.mp3"
     },
     {
         id: 8,
@@ -77,7 +84,8 @@ export const stages = [
         media: [
             "https://images.unsplash.com/photo-1620916566398-39f1143ab7be?auto=format&fit=crop&q=80&w=800"
         ],
-        message: "Mesi 15-16: Buongiorno amore."
+        message: "Mesi 15-16: Buongiorno amore.",
+        music: "/media/tappa8.mp3"
     },
     {
         id: 9,
@@ -87,7 +95,8 @@ export const stages = [
         media: [
             "https://images.unsplash.com/photo-1605307511019-3545b73d8f36?auto=format&fit=crop&q=80&w=800"
         ],
-        message: "Mesi 17-18: Giochi e risate."
+        message: "Mesi 17-18: Giochi e risate.",
+        music: "/media/tappa9.mp3"
     },
     {
         id: 10,
@@ -97,7 +106,8 @@ export const stages = [
         media: [
             "https://images.unsplash.com/photo-1602410714881-2856dbbe5423?auto=format&fit=crop&q=80&w=800"
         ],
-        message: "Mesi 19-20: Disastri in cucina."
+        message: "Mesi 19-20: Disastri in cucina.",
+        music: "/media/tappa10.mp3"
     },
     {
         id: 11,
@@ -107,7 +117,8 @@ export const stages = [
         media: [
             "https://images.unsplash.com/photo-1522338140262-f46f5913618a?auto=format&fit=crop&q=80&w=800"
         ],
-        message: "Mesi 21-22: La tua bellezza."
+        message: "Mesi 21-22: La tua bellezza.",
+        music: "/media/tappa11.mp3"
     },
     {
         id: 12,
@@ -117,7 +128,8 @@ export const stages = [
         media: [
             "https://images.unsplash.com/photo-1571212515416-f6323bc867d7?auto=format&fit=crop&q=80&w=800"
         ],
-        message: "Mesi 23-24: 2 Anni insieme!"
+        message: "Mesi 23-24: 2 Anni insieme!",
+        music: "/media/tappa12.mp3"
     },
     {
         id: 13,
