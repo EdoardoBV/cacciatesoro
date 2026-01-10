@@ -31,7 +31,7 @@ function App() {
   if (!hasStarted) {
     return (
       <Layout>
-        <MusicPlayer src={currentMusic} shouldPlay={false} />
+        <MusicPlayer src={currentMusic} shouldPlay={true} />
         {/* Note: Autoplay might be blocked until interaction, but we mount it */}
         <LandingPage onStart={() => setHasStarted(true)} />
       </Layout>
