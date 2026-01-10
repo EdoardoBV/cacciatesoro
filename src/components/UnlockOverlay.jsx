@@ -58,7 +58,7 @@ export const UnlockOverlay = ({ stage, onClose }) => {
                     <motion.div
                         initial={{ scale: 0.9, opacity: 0 }}
                         animate={{ scale: 1, opacity: 1 }}
-                        className="w-full max-w-sm relative my-auto"
+                        className="w-full max-w-sm relative my-auto bg-white/40 backdrop-blur-2xl rounded-[3rem] p-6 border border-white/60 shadow-2xl"
                     >
                         {/* Success Header */}
                         <div className="text-center mb-8">
@@ -66,15 +66,15 @@ export const UnlockOverlay = ({ stage, onClose }) => {
                                 initial={{ y: 20, opacity: 0 }}
                                 animate={{ y: 0, opacity: 1 }}
                                 transition={{ delay: 0.3 }}
-                                className="inline-flex items-center justify-center w-16 h-16 rounded-full bg-gradient-to-tr from-primary to-orange-400 mb-4 shadow-lg shadow-primary/30"
+                                className="inline-flex items-center justify-center w-20 h-20 rounded-full bg-gradient-to-tr from-rose-500 to-orange-400 mb-6 shadow-xl shadow-rose-500/40 ring-4 ring-white/50"
                             >
-                                <Sparkles className="w-8 h-8 text-white" />
+                                <Sparkles className="w-10 h-10 text-white" />
                             </motion.div>
                             <motion.h2
                                 initial={{ y: 20, opacity: 0 }}
                                 animate={{ y: 0, opacity: 1 }}
                                 transition={{ delay: 0.4 }}
-                                className="text-3xl font-serif text-primary mb-2"
+                                className="text-4xl font-heading font-extrabold text-rose-600 mb-3"
                             >
                                 Tappa Completata!
                             </motion.h2>
@@ -82,7 +82,7 @@ export const UnlockOverlay = ({ stage, onClose }) => {
                                 initial={{ y: 20, opacity: 0 }}
                                 animate={{ y: 0, opacity: 1 }}
                                 transition={{ delay: 0.5 }}
-                                className="text-slate-600 font-medium"
+                                className="text-slate-800 font-medium text-lg leading-relaxed"
                             >
                                 {stage.message}
                             </motion.p>
@@ -101,10 +101,10 @@ export const UnlockOverlay = ({ stage, onClose }) => {
                                     grabCursor={true}
                                     modules={[EffectCards, Pagination]}
                                     pagination={{ clickable: true }}
-                                    className="w-full h-full rounded-2xl shadow-2xl shadow-rose-900/10"
+                                    className="w-full h-full rounded-2xl shadow-2xl shadow-rose-900/20"
                                 >
                                     {stage.media.map((url, idx) => (
-                                        <SwiperSlide key={idx} className="bg-white rounded-2xl overflow-hidden border-4 border-white shadow-sm">
+                                        <SwiperSlide key={idx} className="bg-white rounded-2xl overflow-hidden border-[6px] border-white shadow-sm">
                                             <img
                                                 src={url}
                                                 alt={`Memory ${idx + 1}`}
@@ -122,7 +122,7 @@ export const UnlockOverlay = ({ stage, onClose }) => {
                             animate={{ y: 0, opacity: 1 }}
                             transition={{ delay: 1.2 }}
                             onClick={onClose}
-                            className="w-full py-4 bg-gradient-to-r from-primary to-rose-600 rounded-xl text-white font-bold tracking-wide shadow-lg shadow-rose-500/20 active:scale-95 transition-transform"
+                            className="w-full py-4 bg-gradient-to-r from-rose-500 to-pink-600 rounded-2xl text-white font-heading font-bold text-lg tracking-wide shadow-xl shadow-rose-500/30 active:scale-95 transition-all hover:scale-[1.02]"
                         >
                             PROSEGUI IL VIAGGIO
                         </motion.button>

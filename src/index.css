@@ -2,11 +2,19 @@
 @tailwind components;
 @tailwind utilities;
 
+@import url('https://fonts.googleapis.com/css2?family=Outfit:wght@300;400;500;600;700&display=swap');
+
 @layer base {
   body {
-    @apply bg-background text-slate-100 font-sans;
+    @apply bg-[radial-gradient(ellipse_at_top_right, _var(--tw-gradient-stops))] from-rose-100 via-pink-200 to-rose-300 text-slate-800 font-sans min-h-screen selection:bg-rose-500 selection:text-white;
   }
-  h1, h2, h3, h4, h5, h6 {
-    @apply font-serif;
+
+  h1,
+  h2,
+  h3,
+  h4,
+  h5,
+  h6 {
+    @apply font-heading;
   }
 }

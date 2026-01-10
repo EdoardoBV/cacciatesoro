@@ -27,17 +27,17 @@ function App() {
 
         {/* Error Toast */}
         {error && (
-          <div className="absolute bottom-4 left-0 right-0 mx-auto w-max max-w-[90%] bg-rose-500/90 text-white px-4 py-3 rounded-xl backdrop-blur-md shadow-lg flex items-center gap-2 animate-bounce cursor-pointer" onClick={() => setError(null)}>
-            <AlertCircle className="w-5 h-5" />
-            <span className="text-sm font-medium">{error}</span>
+          <div className="absolute bottom-6 left-0 right-0 mx-auto w-max max-w-[90%] bg-rose-500/80 text-white px-6 py-4 rounded-2xl backdrop-blur-xl border border-rose-400/50 shadow-xl flex items-center gap-3 animate-bounce cursor-pointer z-50 hover:bg-rose-600/90 transition-colors" onClick={() => setError(null)}>
+            <AlertCircle className="w-6 h-6" />
+            <span className="text-sm font-bold font-heading tracking-wide">{error}</span>
           </div>
         )}
       </main>
 
-      <footer className="w-full text-center py-6 opacity-40 hover:opacity-100 transition-opacity">
+      <footer className="w-full text-center py-6">
         <button
           onClick={resetProgress}
-          className="text-xs text-slate-500 font-mono underline hover:text-rose-500 transition-colors"
+          className="text-xs font-bold text-rose-800/40 hover:text-rose-600 transition-colors uppercase tracking-widest hover:scale-105 transform duration-300"
         >
           Ricomincia da capo
         </button>

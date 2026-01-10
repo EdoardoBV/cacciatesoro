@@ -12,8 +12,8 @@ export default {
         secondary: '#fda4af', // Rose 300 (Soft Pink)
       },
       fontFamily: {
-        serif: ['Playfair Display', 'serif'],
-        sans: ['Inter', 'sans-serif'],
+        heading: ['Outfit', 'sans-serif'], // Replacing serif for headings with Outline
+        sans: ['Outfit', 'sans-serif'],
       },
       keyframes: {
         shake: {
