@@ -26,20 +26,41 @@ export const MusicPlayer = ({ src, shouldPlay }) => {
             }
         }
 
-        if (shouldPlay && !isMuted) {
-            const playPromise = audio.play();
-            if (playPromise !== undefined) {
-                playPromise
-                    .then(() => setIsPlaying(true))
-                    .catch(error => {
-                        console.log("Audio play failed (user interaction needed):", error);
-                        setIsPlaying(false);
-                    });
+        const attemptPlay = () => {
+            if (shouldPlay && !isMuted) {
+                const playPromise = audio.play();
+                if (playPromise !== undefined) {
+                    playPromise
+                        .then(() => setIsPlaying(true))
+                        .catch(error => {
+                            console.log("Audio play failed (autoplay blocked):", error);
+                            setIsPlaying(false);
+                            // If blocked, we don't force mute immediately to avoid UI flickering,
+                            // but we wait for interaction.
+                        });
+                }
+            } else {
+                audio.pause();
+                setIsPlaying(false);
             }
-        } else {
-            audio.pause();
-            setIsPlaying(false);
-        }
+        };
+
+        attemptPlay();
+
+        // Add a one-time global click listener to unlock audio if blocked
+        const unlockAudio = () => {
+            if (audio.paused && shouldPlay && !isMuted) {
+                attemptPlay();
+            }
+        };
+
+        window.addEventListener('click', unlockAudio);
+        window.addEventListener('touchstart', unlockAudio);
+
+        return () => {
+            window.removeEventListener('click', unlockAudio);
+            window.removeEventListener('touchstart', unlockAudio);
+        };
 
     }, [src, shouldPlay, isMuted]);
 
