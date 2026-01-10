@@ -6,7 +6,8 @@
 
 @layer base {
   body {
-    @apply bg-[radial-gradient(ellipse_at_top_right, _var(--tw-gradient-stops))] from-rose-100 via-pink-200 to-rose-300 text-slate-800 font-sans min-h-screen selection:bg-rose-500 selection:text-white;
+    @apply text-slate-800 font-sans min-h-screen selection:bg-rose-500 selection:text-white from-rose-100 via-pink-200 to-rose-300;
+    background-image: radial-gradient(ellipse at top right, var(--tw-gradient-stops));
   }
 
   h1,
