@@ -6,7 +6,11 @@ import { UnlockOverlay } from './components/UnlockOverlay';
 import { useScavengerHunt } from './hooks/useScavengerHunt';
 import { AlertCircle } from 'lucide-react';
 
+import { LandingPage } from './components/LandingPage';
+import { useState } from 'react';
+
 function App() {
+  const [hasStarted, setHasStarted] = useState(false);
   const {
     currentStep,
     currentStageData,
@@ -18,11 +22,19 @@ function App() {
     resetProgress
   } = useScavengerHunt();
 
+  if (!hasStarted) {
+    return (
+      <Layout>
+        <LandingPage onStart={() => setHasStarted(true)} />
+      </Layout>
+    );
+  }
+
   return (
     <Layout>
       <Header currentStep={currentStep} />
 
-      <main className="flex-1 flex flex-col items-center justify-center relative">
+      <main className="flex-1 flex flex-col items-center justify-center relative w-full">
         <ClueCard stage={currentStageData} onUnlock={validateCode} />
 
         {/* Error Toast */}
