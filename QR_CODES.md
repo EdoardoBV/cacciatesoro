@@ -13,11 +13,11 @@ Ecco la lista aggiornata dei codici di sblocco per generare i QR Code.
     *   Dove nascondere: Nel puff.
 
 3.  **Yogurt Proteico** (Mesi 5-6)
-    *   Codice: `yogurt-secret-3`
+    *   Codice: `garage-secret-3` (Codice fisico del Puff)
     *   Dove nascondere: Nel frigo/zona yogurt.
 
 4.  **Il BBQ** (Mesi 7-8)
-    *   Codice: `bbq-birria-4`
+    *   Codice: `nike-love-start` (Codice fisico dello Yogurt)
     *   Dove nascondere: Nel Barbecue / zona cenere.
 
 5.  **Il Cuscino** (Mesi 9-10)
@@ -49,11 +49,11 @@ Ecco la lista aggiornata dei codici di sblocco per generare i QR Code.
     *   Dove nascondere: Sul/Vicino al phon.
 
 12. **Garage** (Mesi 23-24 - **FINALE**)
-    *   Codice: `garage-final-12`
+    *   Codice: `yogurt-final-12` (Codice fisico del Phon)
     *   Dove nascondere: In Garage (divano?).
 
 13. **Vittoria**
-    *   Codice: `nike-love-start` (Riutilizza il primo o automatico)
+    *   Codice: `bbq-birria-4` (Codice fisico del Garage)
 
 ---
 

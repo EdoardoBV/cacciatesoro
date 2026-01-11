@@ -27,8 +27,8 @@ export const stages = [
     {
         id: 3,
         title: "Yogurt Proteico",
-        clue: "L'ultima meta è nel regno del gelo, tra pareti di luce bianca.\nCerca la coppa della forza, quella che al tuo muscolo non manca.\nUn cerchio di plastica, frutta e siero che attende il cucchiaio,\nlì finisce la caccia e inizia il nostro nuovo gennaio.",
-        unlockCode: "yogurt-secret-3",
+        clue: "Il bianco tesoro riposa al fresco, cercalo dove il freddo è di casa.\nDove conservi la tua forza mattutina.",
+        unlockCode: "garage-secret-3",
         media: [
             "/media/Tappa3_foto1.jpeg",
             "/media/Tappa3_foto2.jpeg",
@@ -41,7 +41,7 @@ export const stages = [
         id: 4,
         title: "Il BBQ",
         clue: "Cerca il tempio d'acciaio che trasforma il crudo in leggenda.\nDove il calore ha imitato il sole di Guadalajara,\nl'indizio si nasconde dove viene raccolto l'oro.",
-        unlockCode: "bbq-birria-4",
+        unlockCode: "nike-love-start",
         media: [
             "/media/Tappa4_foto1.jpeg",
             "/media/Tappa4_foto2.jpeg",
@@ -144,7 +144,7 @@ export const stages = [
         id: 12,
         title: "Garage",
         clue: "Scendi nel regno del ferro e del fumo, dove il silenzio è un obbligo e il peccato un profumo.\nC'è un'isola di stoffa che ha visto ciò che le pareti non devono dire.\nDove l'eco delle nostre follie non poteva uscire,\ncerca tra le pieghe del luogo che ci ha fatto sparire.",
-        unlockCode: "garage-final-12",
+        unlockCode: "yogurt-final-12",
         media: [
             "/media/Tappa12_foto1.jpeg",
             "/media/Tappa12_foto2.jpeg",
@@ -157,7 +157,7 @@ export const stages = [
         id: 13,
         title: "Tappa Finale",
         clue: "Tanti auguri amore mio!\nGrazie per questi 2 anni fantastici insieme.\nTi amo tantissimo! ❤️",
-        unlockCode: "nike-love-start", // Reusing the first code as the final unlock
+        unlockCode: "bbq-birria-4",
         media: [],
         message: "HAI VINTO!"
     }
