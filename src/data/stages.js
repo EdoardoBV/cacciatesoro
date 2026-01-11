@@ -26,21 +26,21 @@ export const stages = [
     },
     {
         id: 3,
-        title: "Garage",
-        clue: "Scendi nel regno del ferro e del fumo, dove il silenzio è un obbligo e il peccato un profumo.\nC'è un'isola di stoffa che ha visto ciò che le pareti non devono dire.\nDove l'eco delle nostre follie non poteva uscire,\ncerca tra le pieghe del luogo che ci ha fatto sparire.",
-        unlockCode: "garage-secret-3",
+        title: "Yogurt Proteico",
+        clue: "L'ultima meta è nel regno del gelo, tra pareti di luce bianca.\nCerca la coppa della forza, quella che al tuo muscolo non manca.\nUn cerchio di plastica, frutta e siero che attende il cucchiaio,\nlì finisce la caccia e inizia il nostro nuovo gennaio.",
+        unlockCode: "yogurt-secret-3",
         media: [
             "/media/Tappa3_foto1.jpeg",
             "/media/Tappa3_foto2.jpeg",
             "/media/Tappa3_foto3.jpeg"
         ],
         message: "Mesi 5-6: Follie segrete.",
-        music: "/media/tappa3.mp3"
+        music: "/media/tappa12.mp3"
     },
     {
         id: 4,
         title: "Il BBQ",
-        clue: "Cerca il tempio d'acciaio che trasforma il crudo in leggenda.\nNon serve tortilla o carne speziata per capire la sua facenda.\nDove il calore ha imitato il sole di Guadalajara,\nl'indizio si nasconde dove la cenere è stata amara.",
+        clue: "Cerca il tempio d'acciaio che trasforma il crudo in leggenda.\nDove il calore ha imitato il sole di Guadalajara,\nl'indizio si nasconde dove viene raccolto l'oro.",
         unlockCode: "bbq-birria-4",
         media: [
             "/media/Tappa4_foto1.jpeg",
@@ -142,16 +142,16 @@ export const stages = [
     },
     {
         id: 12,
-        title: "Yogurt Proteico",
-        clue: "L'ultima meta è nel regno del gelo, tra pareti di luce bianca.\nCerca la coppa della forza, quella che al tuo muscolo non manca.\nUn cerchio di plastica, frutta e siero che attende il cucchiaio,\nlì finisce la caccia e inizia il nostro nuovo gennaio.",
-        unlockCode: "yogurt-final-12",
+        title: "Garage",
+        clue: "Scendi nel regno del ferro e del fumo, dove il silenzio è un obbligo e il peccato un profumo.\nC'è un'isola di stoffa che ha visto ciò che le pareti non devono dire.\nDove l'eco delle nostre follie non poteva uscire,\ncerca tra le pieghe del luogo che ci ha fatto sparire.",
+        unlockCode: "garage-final-12",
         media: [
             "/media/Tappa12_foto1.jpeg",
             "/media/Tappa12_foto2.jpeg",
             "/media/Tappa12_foto3.jpeg"
         ],
         message: "Mesi 23-24: 2 Anni insieme!",
-        music: "/media/tappa12.mp3"
+        music: "/media/tappa3.mp3"
     },
     {
         id: 13,
