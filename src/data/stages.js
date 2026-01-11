@@ -2,7 +2,7 @@ export const stages = [
     {
         id: 1,
         title: "La Scatola Nike",
-        clue: "Il viaggio comincia dove il tempo si ferma e il cuoio prende forma.\nNon è per camminare, ma per non dimenticare il passo.\nCerca dove 'Just Do It' è diventato 'Lo abbiamo fatto',\ntra le mura del predatore alato che custodisce il nostro patto.",
+        clue: "Il viaggio comincia dove il tempo si ferma e il cuoio prende forma.\nNon è per camminare, ma per non dimenticare il passo.\nCerca tra le mura del predatore alato che custodisce il nostro patto.",
         unlockCode: "nike-love-start",
         media: [
             "/media/tappa1_foto1.jpeg",
