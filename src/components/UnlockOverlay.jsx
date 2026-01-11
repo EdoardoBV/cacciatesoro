@@ -4,6 +4,7 @@ import { X, Sparkles } from 'lucide-react';
 import confetti from 'canvas-confetti';
 import { Swiper, SwiperSlide } from 'swiper/react';
 import { EffectCards, Pagination } from 'swiper/modules';
+import { CelebrationBackground } from './CelebrationBackground';
 
 // Import Swiper styles
 import 'swiper/css';
@@ -55,10 +56,12 @@ export const UnlockOverlay = ({ stage, onClose }) => {
                     exit={{ opacity: 0 }}
                     className="fixed inset-0 z-50 flex flex-col items-center justify-center p-4 bg-white/90 backdrop-blur-xl overflow-y-auto"
                 >
+                    <CelebrationBackground />
+
                     <motion.div
                         initial={{ scale: 0.9, opacity: 0 }}
                         animate={{ scale: 1, opacity: 1 }}
-                        className="w-full max-w-sm relative my-auto bg-white/40 backdrop-blur-2xl rounded-[3rem] p-6 border border-white/60 shadow-2xl"
+                        className="w-full max-w-sm relative my-auto bg-white/40 backdrop-blur-2xl rounded-[3rem] p-6 border border-white/60 shadow-2xl z-10"
                     >
                         {/* Success Header */}
                         <div className="text-center mb-8">

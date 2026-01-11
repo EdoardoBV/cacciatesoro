@@ -1,6 +1,7 @@
 import React from 'react';
 import { Heart } from 'lucide-react';
 import { stages } from '../data/stages';
+import { LoveCounter } from './LoveCounter';
 
 export const Header = ({ currentStep }) => {
     const totalSteps = stages.length;
@@ -8,7 +9,9 @@ export const Header = ({ currentStep }) => {
 
     return (
         <header className="mb-8 flex flex-col items-center w-full relative z-20">
-            <div className="flex items-center gap-3 mb-6 bg-white/30 backdrop-blur-md px-6 py-3 rounded-full border border-white/40 shadow-sm">
+            <LoveCounter />
+
+            <div className="flex items-center gap-3 mb-6 bg-white/30 backdrop-blur-md px-6 py-3 rounded-full border border-white/40 shadow-sm mt-8">
                 <Heart className="w-6 h-6 fill-rose-500 text-rose-500 animate-pulse" />
                 <span className="font-heading font-bold text-lg tracking-wide text-rose-700">2 anni di piccolate</span>
             </div>
