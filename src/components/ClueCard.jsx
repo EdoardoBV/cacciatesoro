@@ -5,6 +5,7 @@ import { QRScanner } from './QRScanner';
 
 export const ClueCard = ({ stage, onUnlock }) => {
     const [showScanner, setShowScanner] = useState(false);
+    const [manualCode, setManualCode] = useState('');
 
     if (!stage) return null;
 
@@ -33,13 +34,38 @@ export const ClueCard = ({ stage, onUnlock }) => {
                     </p>
 
                     {stage.id < 13 && (
-                        <button
-                            onClick={() => setShowScanner(true)}
-                            className="mb-8 flex items-center gap-2 bg-gradient-to-r from-rose-500 to-pink-600 text-white px-8 py-4 rounded-2xl font-heading font-semibold tracking-wide shadow-lg shadow-rose-500/30 hover:shadow-rose-500/50 hover:scale-105 transition-all active:scale-95 group"
-                        >
-                            <Camera className="w-6 h-6 group-hover:rotate-12 transition-transform" />
-                            <span>Scansiona Codice</span>
-                        </button>
+                        <>
+                            <button
+                                onClick={() => setShowScanner(true)}
+                                className="mb-6 flex items-center gap-2 bg-gradient-to-r from-rose-500 to-pink-600 text-white px-8 py-4 rounded-2xl font-heading font-semibold tracking-wide shadow-lg shadow-rose-500/30 hover:shadow-rose-500/50 hover:scale-105 transition-all active:scale-95 group"
+                            >
+                                <Camera className="w-6 h-6 group-hover:rotate-12 transition-transform" />
+                                <span>Scansiona Codice</span>
+                            </button>
+
+                            {/* Debug Manual Input */}
+                            <div className="flex flex-col items-center gap-2 mb-8 w-full max-w-xs">
+                                <p className="text-xs text-slate-500 font-sans uppercase tracking-widest">Oppure inserisci codice</p>
+                                <div className="flex gap-2 w-full">
+                                    <input
+                                        type="text"
+                                        value={manualCode}
+                                        onChange={(e) => setManualCode(e.target.value)}
+                                        placeholder="Codice tappa..."
+                                        className="flex-1 px-4 py-2 rounded-xl border border-rose-200 bg-white/50 backdrop-blur-sm focus:outline-none focus:ring-2 focus:ring-rose-400 font-mono text-sm shadow-inner"
+                                    />
+                                    <button
+                                        onClick={() => {
+                                            const success = onUnlock(manualCode);
+                                            if (success) setManualCode('');
+                                        }}
+                                        className="px-4 py-2 bg-rose-100 text-rose-700 font-bold rounded-xl hover:bg-rose-200 transition-colors shadow-sm"
+                                    >
+                                        OK
+                                    </button>
+                                </div>
+                            </div>
+                        </>
                     )}
 
                     <div className="flex items-center gap-2 text-xs font-bold text-rose-500/80 font-mono border border-rose-200/50 px-4 py-2 rounded-full bg-white/40 backdrop-blur-sm">
